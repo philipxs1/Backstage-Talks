@@ -1,7 +1,7 @@
 export interface MagazineType {
   name: string;
   img: string;
-  id: number;
+  id: string;
   available: boolean;
 }
 
@@ -10,7 +10,7 @@ const Issue = ({ name, available, id, img }: MagazineType) => {
     <section
       id={id}
       className="w-full h-[100vh] flex flex-col items-center snap-start pt-20 transition ease-in-out">
-      <img src={img} alt={id} className="w-[26.25rem]" />
+      <img src={img} alt={name} className="w-[26.25rem]" />
       <p className="font-semibold">
         Issue #{name}
         {available ? "" : "is sold out"}
