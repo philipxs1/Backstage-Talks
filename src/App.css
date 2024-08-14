@@ -1,0 +1,59 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+p {
+  margin: 5;
+}
+
+.app {
+  transition: background-color 700ms ease 0s;
+  margin: 0;
+}
+
+.teal {
+  background-color: var(--clr-teal);
+}
+.orange {
+  background-color: var(--clr-orange);
+}
+.yellow {
+  background-color: var(--clr-yellow);
+}
+.blue {
+  background-color: var(--clr-blue);
+}
+.red {
+  background-color: var(--clr-red);
+}
+
+/* #issue-5 {
+}
+#issue-4 {
+  display: none;
+}
+
+#issue-3 {
+  display: none;
+}
+
+#issue-2 {
+  display: none;
+}
+
+#issue-1 {
+  display: none;
+} */
